@@ -1,0 +1,59 @@
+body {
+  position: relative;
+  min-height: 100vh;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input,
+.submit {
+  border: 1px solid black;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.submit {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.charsContainer {
+  height: 30px;
+  position: relative;
+}
+
+.char {
+  position: absolute;
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid blue;
+  cursor: pointer;
+  user-select: none;
+}
+
+.char.selected {
+  background-color: lightblue;
+  border-color: navy;
+}
+
+#selectionBox {
+  position: fixed;
+  border: 1px dashed #000;
+  background-color: rgba(0, 86, 255, 0.1);
+  z-index: 1000;
+  display: none;
+}
